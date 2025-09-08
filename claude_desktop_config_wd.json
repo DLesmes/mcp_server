@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "local_demo": {
+      "command": "C:\\Users\\LESDIE\\.local\\bin\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Users\\LESDIE\\Documents\\mcp_server\\server.py"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<your-openai-api-key>",
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

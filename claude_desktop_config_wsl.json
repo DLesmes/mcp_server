@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "Demo": {
+            "command": "/mnt/c/Users/LESDIE/Documents/mcp_server/.venv/bin/python",
+            "args": [
+                "/mnt/c/Users/LESDIE/Documents/mcp_server/server.py"
+            ],
+            "env": {
+                "OPENAI_API_KEY": "<your-openai-api-key>"
+            }
+        }
+    }
+}
