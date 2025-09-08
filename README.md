@@ -52,12 +52,28 @@ git clone <your-repo-url>
 cd mcp_server
 ```
 
-2. **Install dependencies:**
+2. **Create virtual environment:**
 ```bash
-uv sync
+uv venv
 ```
 
-3. **Run the server:**
+3. **Activate virtual environment:**
+```bash
+# Windows
+.venv\Scripts\activate
+```
+
+```bash
+# macOS/Linux
+source .venv/bin/activate
+```
+
+4. **Install dependencies:**
+```bash
+uv pip install -r requirements.txt
+```
+
+5. **Run the server:**
 ```bash
 uv run python server.py
 ```
@@ -79,7 +95,9 @@ python -m venv .venv
 ```bash
 # Windows
 .venv\Scripts\activate
+```
 
+```bash
 # macOS/Linux
 source .venv/bin/activate
 ```
