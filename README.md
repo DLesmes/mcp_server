@@ -44,13 +44,13 @@ pip install mcp-tools-cli
 
 ## 🚀 Quick Start
 
-### Option 1: Using UV (Recommended) ⚡
-
 1. **Clone and navigate to the project:**
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:DLesmes/mcp_server.git
 cd mcp_server
 ```
+
+### Option 1: Using UV (Recommended) ⚡
 
 2. **Create virtual environment:**
 ```bash
@@ -79,12 +79,6 @@ uv run python server.py
 ```
 
 ### Option 2: Using Pure Python 🐍
-
-1. **Clone and navigate to the project:**
-```bash
-git clone <your-repo-url>
-cd mcp_server
-```
 
 2. **Create virtual environment:**
 ```bash
