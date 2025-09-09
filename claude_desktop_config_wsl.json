@@ -1,13 +1,19 @@
 {
     "mcpServers": {
-        "Demo": {
-            "command": "/mnt/c/Users/LESDIE/Documents/mcp_server/.venv/bin/python",
-            "args": [
-                "/mnt/c/Users/LESDIE/Documents/mcp_server/server.py"
-            ],
-            "env": {
-                "OPENAI_API_KEY": "<your-openai-api-key>"
-            }
+      "local_demo": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "mcp[cli]",
+          "mcp",
+          "run",
+          "/mnt/c/Users/<username>/<path-to-mcp-server-directory>/server.py"
+        ],
+        "env": {
+          "OPENAI_API_KEY": "<your-openai-api-key>",
+          "PYTHONUNBUFFERED": "1"
         }
+      }
     }
-}
+  }

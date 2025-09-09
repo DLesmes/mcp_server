@@ -116,20 +116,50 @@ python server.py
 
 ### CLI Testing with mcp-tools-cli 🔧
 
-Test your MCP server using the command line interface. Use these commands to verify the `add` tool works correctly:
+Test your MCP server using the command line interface. 
 
-#### Proper JSON Format
+#### Windows Console Testing 🪟
+
+##### Listing tools
+```bash
+uvx mcp-tools-cli list-tools --mcp-name local_demo --config-path .\mcp_config.json
+```
+
+##### Calling tools - Proper JSON Format
 ```bash
 uvx mcp-tools-cli call-tool --% --mcp-name local_demo --tool-name add --tool-args {"a":1,"b":2} --config-path .\mcp_config.json
 ```
 
-#### Tolerant Fallback Formats
+##### Calling tools - Key-value pairs
 ```bash
-# Key-value pairs
 uvx mcp-tools-cli call-tool --mcp-name local_demo --tool-name add --tool-args a=1,b=2 --config-path .\mcp_config.json
+```
 
-# Simplified JSON
+##### Calling tools - Simplified JSON
+```bash
 uvx mcp-tools-cli call-tool --% --mcp-name local_demo --tool-name add --tool-args {a:1,b:2} --config-path .\mcp_config.json
+```
+
+#### WSL Console Testing 🐧
+
+##### Listing tools
+```bash
+uvx mcp-tools-cli list-tools --mcp-name local_demo --config-path ./mcp_config.json
+```
+
+##### Calling tools - Proper JSON Format
+```bash
+uvx mcp-tools-cli call-tool --mcp-name local_demo --tool-name add --tool-args '{"a":1,"b":2}' --config-path ./mcp_config.json
+```
+
+##### Calling tools - Key-value pairs
+```bash
+uvx mcp-tools-cli call-tool --mcp-name local_demo --tool-name add --tool-args 'a=1,b=2' --config-path ./mcp_config.json
+```
+
+##### Calling tools - Simplified JSON
+```bash
+uvx mcp-tools-cli call-tool --mcp-name local_demo --tool-name add --tool-args '{a:1,b:2}' --config-path ./mcp_config.json
 ```
 
 ### Claude Desktop Testing 🖥️

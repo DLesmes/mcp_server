@@ -6,7 +6,7 @@
         "run",
         "python",
         "-u",
-        "/mnt/c/Users/LESDIE/Documents/mcp_server/server.py"
+        "C:\\Users\\<username>\\<path-to-mcp-server-directory>\\server.py"
       ],
       "env": {
         "OPENAI_API_KEY": "REPLACE_WITH_REAL_KEY",
