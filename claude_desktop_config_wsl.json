@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+      "local_demo": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "mcp[cli]",
+          "mcp",
+          "run",
+          "/mnt/c/Users/<username>/<path-to-mcp-server-directory>/server.py"
+        ],
+        "env": {
+          "OPENAI_API_KEY": "<your-openai-api-key>",
+          "PYTHONUNBUFFERED": "1"
+        }
+      }
+    }
+  }

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "local_demo": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-u",
+        "/mnt/c/Users/LESDIE/Documents/mcp_server/server.py"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "REPLACE_WITH_REAL_KEY",
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
